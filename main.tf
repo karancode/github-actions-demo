@@ -1,4 +1,8 @@
+variable "GITHUB_TOKEN" {
+  default = "placeholder_token"
+}
+
 provider "github" {
-  token        = "${GITHUB_ACCESS_TOKEN}"
+  token        = var.GITHUB_TOKEN
   organization = "pay9"
 }
