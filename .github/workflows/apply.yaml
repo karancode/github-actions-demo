@@ -7,7 +7,6 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
-    fail-fast: true
 
     steps:
       - name: 'Terraform Apply'
