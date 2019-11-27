@@ -39,6 +39,6 @@ jobs:
         with:
           tf_actions_version: 0.12.13
           tf_actions_subcommand: 'plan'
-          args: '-var=GITHUB_ACCCESS_TOKEN=${{secrets.GITHUB_ACCESS_TOKEN}}'
+          args: '-var=GITHUB_ACCESS_TOKEN=${{secrets.GITHUB_ACCESS_TOKEN}}'
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
