@@ -1,5 +1,5 @@
 variable "GITHUB_ACCESS_TOKEN" {
-  type="string"
+  type    = "string"
   default = "placeholder_token"
 }
 
