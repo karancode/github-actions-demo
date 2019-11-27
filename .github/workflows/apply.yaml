@@ -18,6 +18,13 @@ jobs:
           tf_actions_subcommand: 'fmt'
         env:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+      - name: 'Terraform Init'
+        uses: hashicorp/terraform-github-actions@master
+        with:
+          tf_actions_version: 0.12.13
+          tf_actions_subcommand: 'init'
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
       - name: 'Terraform Apply'
         uses: hashicorp/terraform-github-actions@master
         with:
