@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '!main.tf'
 jobs:
   terraform:
     name: 'Terraform'
