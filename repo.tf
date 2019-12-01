@@ -15,3 +15,9 @@ resource "github_repository" "example3" {
   description = "My awesome codebase3"
 
 }
+
+resource "github_repository" "example4" {
+  name        = "example4"
+  description = "My awesome codebase3"
+
+}
